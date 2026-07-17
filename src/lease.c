@@ -19,7 +19,19 @@ static int lease_parse_line(const char *line)
         return -1;
     }
 
-    session_add(ip, mac, hostname);
+    subscriber_session_t *s;
+
+s = session_find(ip);
+
+if (s == NULL) {
+
+    s = session_add(ip, mac, hostname);
+}
+
+if (s != NULL) {
+
+    session_mark_visited(ip);
+}
 
     return 0;
 }

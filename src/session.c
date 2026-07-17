@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "session.h"
 #include "config.h"
-
+#include "session.h"
 
 typedef struct {
     int used;
+    int visited;
     subscriber_session_t session;
 } session_slot_t;
 
@@ -84,6 +84,46 @@ int session_remove(const char *ip)
 
     return -1;
 }
+
+void session_mark_all_unvisited(void)
+{
+    for (int i = 0; i < MAX_SESSION; i++) {
+
+        if (!table[i].used)
+            continue;
+
+        table[i].visited = 0;
+    }
+}
+
+void session_mark_visited(const char *ip)
+{
+    for (int i = 0; i < MAX_SESSION; i++) {
+
+        if (!table[i].used)
+            continue;
+
+        if (strcmp(table[i].session.ip, ip) == 0) {
+            table[i].visited = 1;
+            return;
+        }
+    }
+}
+
+void session_remove_unvisited(void)
+{
+    for (int i = 0; i < MAX_SESSION; i++) {
+
+        if (!table[i].used)
+            continue;
+
+        if (table[i].visited)
+            continue;
+
+        memset(&table[i], 0, sizeof(session_slot_t));
+    }
+}
+
 
 void session_dump(void)
 {

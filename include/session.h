@@ -18,4 +18,9 @@ int session_remove(
 
 void session_dump(void);
 
+void session_mark_all_unvisited(void);
+
+void session_mark_visited(const char *ip);
+
+void session_remove_unvisited(void);
 #endif

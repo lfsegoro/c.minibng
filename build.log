@@ -1,0 +1,193 @@
+src/session.c:1:1: error: stray '##' in program
+    1 | ##include <stdio.h>
+      | ^~
+src/session.c:1:11: error: expected '=', ',', ';', 'asm' or '__attribute__' before '<' token
+    1 | ##include <stdio.h>
+      |           ^
+In file included from /usr/include/fortify/string.h:23,
+                 from src/session.c:2:
+/usr/include/string.h:27:57: error: unknown type name 'size_t'
+   27 | void *memcpy (void *__restrict, const void *__restrict, size_t);
+      |                                                         ^~~~~~
+/usr/include/string.h:26:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+   25 | #include <bits/alltypes.h>
+  +++ |+#include <stddef.h>
+   26 | 
+/usr/include/string.h:28:38: error: unknown type name 'size_t'
+   28 | void *memmove (void *, const void *, size_t);
+      |                                      ^~~~~~
+/usr/include/string.h:28:38: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:29:28: error: unknown type name 'size_t'
+   29 | void *memset (void *, int, size_t);
+      |                            ^~~~~~
+/usr/include/string.h:29:28: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:30:41: error: unknown type name 'size_t'
+   30 | int memcmp (const void *, const void *, size_t);
+      |                                         ^~~~~~
+/usr/include/string.h:30:41: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:31:34: error: unknown type name 'size_t'
+   31 | void *memchr (const void *, int, size_t);
+      |                                  ^~~~~~
+/usr/include/string.h:31:34: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:34:58: error: unknown type name 'size_t'
+   34 | char *strncpy (char *__restrict, const char *__restrict, size_t);
+      |                                                          ^~~~~~
+/usr/include/string.h:34:58: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:37:58: error: unknown type name 'size_t'
+   37 | char *strncat (char *__restrict, const char *__restrict, size_t);
+      |                                                          ^~~~~~
+/usr/include/string.h:37:58: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:40:42: error: unknown type name 'size_t'
+   40 | int strncmp (const char *, const char *, size_t);
+      |                                          ^~~~~~
+/usr/include/string.h:40:42: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:43:1: error: unknown type name 'size_t'
+   43 | size_t strxfrm (char *__restrict, const char *__restrict, size_t);
+      | ^~~~~~
+/usr/include/string.h:43:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:43:59: error: unknown type name 'size_t'
+   43 | size_t strxfrm (char *__restrict, const char *__restrict, size_t);
+      |                                                           ^~~~~~
+/usr/include/string.h:43:59: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:48:1: error: unknown type name 'size_t'
+   48 | size_t strcspn (const char *, const char *);
+      | ^~~~~~
+/usr/include/string.h:48:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:49:1: error: unknown type name 'size_t'
+   49 | size_t strspn (const char *, const char *);
+      | ^~~~~~
+/usr/include/string.h:49:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:54:1: error: unknown type name 'size_t'
+   54 | size_t strlen (const char *);
+      | ^~~~~~
+/usr/include/string.h:54:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+In file included from /usr/include/fortify/strings.h:20,
+                 from /usr/include/string.h:59:
+/usr/include/strings.h:17:39: error: unknown type name 'size_t'
+   17 | int bcmp (const void *, const void *, size_t);
+      |                                       ^~~~~~
+/usr/include/strings.h:13:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+   12 | #include <bits/alltypes.h>
+  +++ |+#include <stddef.h>
+   13 | 
+/usr/include/strings.h:18:35: error: unknown type name 'size_t'
+   18 | void bcopy (const void *, void *, size_t);
+      |                                   ^~~~~~
+/usr/include/strings.h:18:35: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/strings.h:19:21: error: unknown type name 'size_t'
+   19 | void bzero (void *, size_t);
+      |                     ^~~~~~
+/usr/include/strings.h:19:21: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/strings.h:31:46: error: unknown type name 'size_t'
+   31 | int strncasecmp (const char *, const char *, size_t);
+      |                                              ^~~~~~
+/usr/include/strings.h:31:46: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/strings.h:34:48: error: unknown type name 'size_t'
+   34 | int strncasecmp_l (const char *, const char *, size_t, locale_t);
+      |                                                ^~~~~~
+/usr/include/strings.h:34:48: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:66:30: error: unknown type name 'size_t'
+   66 | int strerror_r (int, char *, size_t);
+      |                              ^~~~~~
+/usr/include/string.h:66:30: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:68:57: error: unknown type name 'size_t'
+   68 | char *stpncpy(char *__restrict, const char *__restrict, size_t);
+      |                                                         ^~~~~~
+/usr/include/string.h:68:57: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:69:1: error: unknown type name 'size_t'
+   69 | size_t strnlen (const char *, size_t);
+      | ^~~~~~
+/usr/include/string.h:69:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:69:31: error: unknown type name 'size_t'
+   69 | size_t strnlen (const char *, size_t);
+      |                               ^~~~~~
+/usr/include/string.h:69:31: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:71:30: error: unknown type name 'size_t'
+   71 | char *strndup (const char *, size_t);
+      |                              ^~~~~~
+/usr/include/string.h:71:30: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:75:1: error: unknown type name 'size_t'
+   75 | size_t strxfrm_l (char *__restrict, const char *__restrict, size_t, locale_t);
+      | ^~~~~~
+/usr/include/string.h:75:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:75:61: error: unknown type name 'size_t'
+   75 | size_t strxfrm_l (char *__restrict, const char *__restrict, size_t, locale_t);
+      |                                                             ^~~~~~
+/usr/include/string.h:75:61: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:76:28: error: unknown type name 'size_t'
+   76 | void *memmem(const void *, size_t, const void *, size_t);
+      |                            ^~~~~~
+/usr/include/string.h:76:28: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:76:50: error: unknown type name 'size_t'
+   76 | void *memmem(const void *, size_t, const void *, size_t);
+      |                                                  ^~~~~~
+/usr/include/string.h:76:50: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:81:63: error: unknown type name 'size_t'
+   81 | void *memccpy (void *__restrict, const void *__restrict, int, size_t);
+      |                                                               ^~~~~~
+/usr/include/string.h:81:63: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:86:1: error: unknown type name 'size_t'
+   86 | size_t strlcat (char *, const char *, size_t);
+      | ^~~~~~
+/usr/include/string.h:86:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:86:39: error: unknown type name 'size_t'
+   86 | size_t strlcat (char *, const char *, size_t);
+      |                                       ^~~~~~
+/usr/include/string.h:86:39: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:87:1: error: unknown type name 'size_t'
+   87 | size_t strlcpy (char *, const char *, size_t);
+      | ^~~~~~
+/usr/include/string.h:87:1: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:87:39: error: unknown type name 'size_t'
+   87 | size_t strlcpy (char *, const char *, size_t);
+      |                                       ^~~~~~
+/usr/include/string.h:87:39: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+/usr/include/string.h:88:30: error: unknown type name 'size_t'
+   88 | void explicit_bzero (void *, size_t);
+      |                              ^~~~~~
+/usr/include/string.h:88:30: note: 'size_t' is defined in header '<stddef.h>'; this is probably fixable by adding '#include <stddef.h>'
+src/session.c: In function 'session_init':
+src/session.c:17:5: error: implicit declaration of function 'memset' [-Wimplicit-function-declaration]
+   17 |     memset(table, 0, sizeof(table));
+      |     ^~~~~~
+src/session.c:6:1: note: include '<string.h>' or provide a declaration of 'memset'
+    5 | #include "session.h"
+  +++ |+#include <string.h>
+    6 | 
+src/session.c:17:5: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   17 |     memset(table, 0, sizeof(table));
+      |     ^~~~~~
+src/session.c:17:5: note: include '<string.h>' or provide a declaration of 'memset'
+src/session.c: In function 'session_add':
+src/session.c:51:9: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   51 |         memset(&table[i].session, 0, sizeof(subscriber_session_t));
+      |         ^~~~~~
+src/session.c:51:9: note: include '<string.h>' or provide a declaration of 'memset'
+src/session.c:53:9: error: implicit declaration of function 'strncpy' [-Wimplicit-function-declaration]
+   53 |         strncpy(table[i].session.ip, ip,
+      |         ^~~~~~~
+src/session.c:53:9: note: include '<string.h>' or provide a declaration of 'strncpy'
+src/session.c:53:9: warning: incompatible implicit declaration of built-in function 'strncpy' [-Wbuiltin-declaration-mismatch]
+src/session.c:53:9: note: include '<string.h>' or provide a declaration of 'strncpy'
+src/session.c: In function 'session_remove':
+src/session.c:79:13: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+   79 |             memset(&table[i], 0, sizeof(session_slot_t));
+      |             ^~~~~~
+src/session.c:79:13: note: include '<string.h>' or provide a declaration of 'memset'
+src/session.c: In function 'session_remove_unvisited':
+src/session.c:123:9: warning: incompatible implicit declaration of built-in function 'memset' [-Wbuiltin-declaration-mismatch]
+  123 |         memset(&table[i], 0, sizeof(session_slot_t));
+      |         ^~~~~~
+src/session.c:123:9: note: include '<string.h>' or provide a declaration of 'memset'
+src/session.c: In function 'session_dump':
+src/session.c:130:5: error: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  130 |     printf("\n===== SESSION TABLE =====\n");
+      |     ^~~~~~
+src/session.c:6:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    5 | #include "session.h"
+  +++ |+#include <stdio.h>
+    6 | 
+src/session.c:130:5: warning: incompatible implicit declaration of built-in function 'printf' [-Wbuiltin-declaration-mismatch]
+  130 |     printf("\n===== SESSION TABLE =====\n");
+      |     ^~~~~~
+src/session.c:130:5: note: include '<stdio.h>' or provide a declaration of 'printf'
