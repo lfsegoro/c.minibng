@@ -1,6 +1,7 @@
 #include "watcher.h"
 #include "session.h"
 #include <unistd.h>
+#include "http.h"
 
 int main(void)
 {
@@ -8,10 +9,7 @@ int main(void)
 
     watcher_start("sample.leases");
 
-    while (1) {
-
-        sleep(60);
-    }
+    http_start();
 
     return 0;
 }
