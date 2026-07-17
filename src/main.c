@@ -1,17 +1,8 @@
-#include "session.h"
-#include "lease.h"
+#include "watcher.h"
 
 int main(void)
 {
-    session_init();
-
-lease_load("sample.leases");
-
-session_dump();
-    
-    
-
-    
+    watcher_run("sample.leases");
 
     return 0;
 }
