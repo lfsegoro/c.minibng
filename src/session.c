@@ -96,6 +96,17 @@ void session_mark_all_unvisited(void)
     }
 }
 
+void session_foreach(session_callback_t callback)
+{
+    for (int i = 0; i < MAX_SESSION; i++) {
+
+        if (!table[i].used)
+            continue;
+
+        callback(&table[i].session);
+    }
+}
+
 void session_mark_visited(const char *ip)
 {
     for (int i = 0; i < MAX_SESSION; i++) {

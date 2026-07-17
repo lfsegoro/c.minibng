@@ -2,6 +2,7 @@
 
 #include "lease.h"
 #include "session.h"
+#include "policy.h"
 
 void watcher_run(const char *lease_file)
 {
@@ -12,6 +13,8 @@ void watcher_run(const char *lease_file)
     lease_load(lease_file);
 
     session_remove_unvisited();
+
+    session_foreach(policy_apply);
 
     session_dump();
 

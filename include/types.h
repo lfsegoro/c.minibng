@@ -6,7 +6,10 @@
 typedef enum {
     CLIENT_BLOCKED,
     CLIENT_ACTIVE,
-    CLIENT_ISOLATED
+    CLIENT_ISOLATED,
+    STATUS_BLOCKED = 0,
+    STATUS_ACTIVE,
+    STATUS_ISOLATED
 } client_status_t;
 
 typedef struct {
@@ -20,5 +23,6 @@ typedef struct {
     uint64_t download;
     uint64_t limit;
 } subscriber_session_t;
+
 
 #endif
