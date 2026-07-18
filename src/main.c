@@ -9,7 +9,10 @@ int main(void)
 
     watcher_start("sample.leases");
 
-    http_start();
+    http_start(8080);
+
+    while (1)
+        sleep(60);
 
     return 0;
 }
